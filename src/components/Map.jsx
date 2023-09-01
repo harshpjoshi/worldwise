@@ -29,6 +29,7 @@ function Map() {
   useEffect(
     function () {
       if (lat && lng) setCurrentPosition([lat, lng]);
+      console.log(`lat, lng   ==== ${lat},${lng}`);
     },
     [lat, lng]
   );
@@ -37,15 +38,18 @@ function Map() {
     function () {
       console.log(position);
       if (position) setCurrentPosition([position.lat, position.lng]);
+      console.log(`position   ==== ${lat},${lng}`);
     },
     [position]
   );
 
   return (
     <div className={styles.mapContainer}>
-      <Button type="position" onClick={getPosition}>
-        {isLoading ? "Loading..." : "Use Current Location"}
-      </Button>
+      {!position && (
+        <Button type="position" onClick={getPosition}>
+          {isLoading ? "Loading..." : "Use Current Location"}
+        </Button>
+      )}
       <MapContainer
         // center={[lat, lng]}
         center={currentPosition}
@@ -69,8 +73,8 @@ function Map() {
             </Popup>
           </Marker>
         ))}
-        <ChangeCenter position={currentPosition} />
         <DetectClick />
+        {<ChangeCenter position={currentPosition} />}
       </MapContainer>
     </div>
   );
@@ -86,7 +90,7 @@ function DetectClick() {
   const navigate = useNavigate();
   useMapEvents({
     click: (e) => {
-      navigate(`form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`);
+      navigate(`form?lat=${e.latlng.lat}&long=${e.latlng.lng}`);
     },
   });
   return null;
