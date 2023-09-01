@@ -35,66 +35,6 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
-    },
-    {
-      "cityName": "Tinerkouk",
-      "country": "Algeria",
-      "emoji": "🇩🇿",
-      "date": "2023-09-01T05:16:44.190Z",
-      "notes": "Test Tiner",
-      "position": {
-        "lat": "30.584250966905866",
-        "lng": "0.855822825660293"
-      },
-      "id": 98443198
-    },
-    {
-      "cityName": "Sandoa",
-      "country": "Congo (the Democratic Republic of the)",
-      "emoji": "🇨🇩",
-      "date": "2023-09-01T05:21:53.319Z",
-      "notes": "Test SaNODA",
-      "position": {
-        "lat": "-9.83501881771961",
-        "lng": "23.157977835967866"
-      },
-      "id": 98443199
-    },
-    {
-      "cityName": "Medina",
-      "country": "Saudi Arabia",
-      "emoji": "🇸🇦",
-      "date": "2023-09-01T05:25:01.213Z",
-      "notes": "Test Data",
-      "position": {
-        "lat": "24.031688056030127",
-        "lng": "39.52527010680051"
-      },
-      "id": 98443200
-    },
-    {
-      "cityName": "Shuanghu County",
-      "country": "China",
-      "emoji": "🇨🇳",
-      "date": "2023-09-01T05:45:57.785Z",
-      "notes": "Test Shu",
-      "position": {
-        "lat": "33.32292549227333",
-        "lng": "88.95736281527834"
-      },
-      "id": 98443201
-    },
-    {
-      "cityName": "Gharyan",
-      "country": "Libya",
-      "emoji": "🇱🇾",
-      "date": "2023-09-01T05:54:14.998Z",
-      "notes": "Test Gharyan",
-      "position": {
-        "lat": "30.546187926730806",
-        "lng": "13.181575085661434"
-      },
-      "id": 98443202
     }
   ]
 }
